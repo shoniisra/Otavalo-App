@@ -1,0 +1,44 @@
+.welcome-card img {
+    max-height: 35vh;
+    overflow: hidden;
+  }
+  
+  .tarjeta_fondo {
+    background: #ffffff;
+    color: #ffffff;
+    background-color: #ffffff;
+    --ion-background-color: #ffffff;
+  }
+  
+  .tarjeta_fondo{
+    background:#ffffff;
+  color:#ffffff;
+  background-color: #ffffff;  
+  --ion-background-color:#ffffff;
+  }
+  .card-background-page{
+    border: none !important;
+    ion-card{
+      border: none !important;
+        position: relative;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        border: 0px 0px;
+    }
+    .card-title{
+        position: absolute;
+        top: 10%;
+        font-size: 1.5em;
+        width: 100%;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    .card-subtitle{
+        font-size: 1.0em;
+        position: absolute;
+        top: 54%;
+        width: 100%;
+        color: #e9e9e9;
+    }
+  }

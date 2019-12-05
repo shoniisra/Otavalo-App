@@ -25,6 +25,22 @@ const routes: Routes = [
   {
     path: 'magico',
     loadChildren: () => import('./pages/magico/magico.module').then( m => m.MagicoPageModule)
+  },
+  {
+    path: 'leyenda1',
+    loadChildren: () => import('./pages/leyenda1/leyenda1.module').then( m => m.Leyenda1PageModule)
+  },
+  {
+    path: 'leyenda2',
+    loadChildren: () => import('./pages/leyenda2/leyenda2.module').then( m => m.Leyenda2PageModule)
+  },
+  {
+    path: 'leyenda3',
+    loadChildren: () => import('./pages/leyenda3/leyenda3.module').then( m => m.Leyenda3PageModule)
+  },
+  {
+    path: 'leyenda4',
+    loadChildren: () => import('./pages/leyenda4/leyenda4.module').then( m => m.Leyenda4PageModule)
   }
 ];
 @NgModule({

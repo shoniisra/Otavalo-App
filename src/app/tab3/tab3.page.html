@@ -1,19 +1,14 @@
-<ion-header mode="ios" no-border translucent="true">
+<ion-header mode="ios" no-border translucent="true" class="fondonegro">
   <ion-toolbar mode="ios" >    
     <ion-title color="primary">GALERIA</ion-title>      
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="fondo card-background-page">
-  <ion-card class="fondoblanco" *ngFor="let tarjeta of [1,1,1]"    
->
-    <ion-card-header>
-      <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
-      <ion-card-title>Awesome Title</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      Awesome content
-    </ion-card-content>
-  </ion-card>
+<ion-content class="fondonegro card-background-page">
+    <ion-card *ngFor="let tarjeta of tarjetas"    
+    routerLink="{{ tarjeta.pagina }}" routerDirection="root">
+        <img src="{{ tarjeta.imagen }}" />
+        
+    </ion-card>
     
 </ion-content>

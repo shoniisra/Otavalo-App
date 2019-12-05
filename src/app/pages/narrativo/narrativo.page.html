@@ -5,8 +5,26 @@
     </ion-buttons>
     <ion-title color="primary">FOLKLORE NARRATIVO</ion-title>
   </ion-toolbar>
-</ion-header> 
+  <ion-toolbar mode="ios">      
+      <ion-title color="secondary">LEYENDAS</ion-title>
+    </ion-toolbar>
+</ion-header>
 
-<ion-content  class="fondo ">
-
+<ion-content class="fondo">
+  <ion-grid noborder>
+    <ion-row noborder>
+      <ion-col size="6" *ngFor="let tarjeta of tarjetas" class="card-background-page" noborder>
+        <ion-card routerLink="{{ tarjeta.pagina }}" routerDirection="root" class="fondoblanco">
+          <img src="{{ tarjeta.imagen }}"/>
+          <ion-card-header>            
+            <ion-card-title>{{ tarjeta.titulo }}</ion-card-title>
+          </ion-card-header>   
+          <ion-card-content class="ion-text-justify">
+              {{ tarjeta.historia | slice:0:100}}... 
+              <br><a>ver más</a>
+          </ion-card-content>   
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

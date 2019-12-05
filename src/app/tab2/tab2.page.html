@@ -1,19 +1,34 @@
 <ion-header mode="ios" no-border translucent="true">
-  <ion-toolbar mode="ios" >    
-    <ion-title color="primary">INFO OTAVALO</ion-title>      
+  <ion-toolbar mode="ios">
+    <ion-title color="primary">INFO OTAVALO</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="fondo card-background-page">
-  <ion-card class="fondoblanco" *ngFor="let tarjeta of [1,1,1]"    
->
+  <ion-card class="fondoblanco ">
     <ion-card-header>
-      <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
-      <ion-card-title>Awesome Title</ion-card-title>
+      <img class="imagen" src="../../../assets/img/huma.jpg" />
+
+      <ion-card-subtitle>Folklore y Tradición</ion-card-subtitle>
+      <ion-card-title>OTAVALO</ion-card-title>
     </ion-card-header>
-    <ion-card-content>
-      Awesome content
+    <ion-card-content class="ion-text-justify">
+      En todas las comunidades indígenas del cantón Otavalo, se realizan los
+      siguientes actos para le celebración del Inti Raymi.
+      <ion-list>
+        <ion-item (click)="presentAlertConfirm()">
+          <ion-label>INFORMACIÖN GENERAL</ion-label>
+        </ion-item>
+        <ion-item (click)="presentAlertConfirm()">
+          <ion-label>UBICACIÓN</ion-label>
+        </ion-item>
+        <ion-item (click)="presentAlertConfirm()">
+          <ion-label>HISTORIA</ion-label>
+        </ion-item>
+        <ion-item (click)="presentAlertConfirm()">
+          <ion-label>GENTE</ion-label>
+        </ion-item>
+      </ion-list>
     </ion-card-content>
   </ion-card>
-    
 </ion-content>
