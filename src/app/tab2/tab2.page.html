@@ -1,9 +1,19 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Two
-    </ion-title>
+<ion-header mode="ios" no-border translucent="true">
+  <ion-toolbar mode="ios" >    
+    <ion-title color="primary">INFO OTAVALO</ion-title>      
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content class="fondo card-background-page">
+  <ion-card class="fondoblanco" *ngFor="let tarjeta of [1,1,1]"    
+>
+    <ion-card-header>
+      <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+      <ion-card-title>Awesome Title</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Awesome content
+    </ion-card-content>
+  </ion-card>
+    
+</ion-content>
