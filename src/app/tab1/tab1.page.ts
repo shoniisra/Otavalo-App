@@ -25,14 +25,14 @@ export class Tab1Page {
     {
       "titulo":"Folcklore Narrativo",
       "subtitulo":"Mitos, Leyendas, y Cuentos",
-      "imagen":"https://picsum.photos/id/1025/100/50/?blur=1",
+      "imagen":"https://picsum.photos/id/1024/100/50/?blur=1",
       "pagina":"/narrativo",
   
     },
     {
       "titulo":"Folcklore Poético",
       "subtitulo":"Vocablos Hecho Arte",
-      "imagen":"https://picsum.photos/100/50/?blur=1",
+      "imagen":"https://picsum.photos/id/1025/100/50/?blur=1",
       "pagina":"/poetico",
   
     },
@@ -43,6 +43,43 @@ export class Tab1Page {
       "pagina":"/magico",
   
     }
+
+
+    // {
+    //   "titulo":"Folcklore Social",
+    //   "subtitulo":"Costumbres y Tradiciones",
+    //   "imagen":"../../../assets/img/a.jpg",
+    //   "pagina":"/social",
+  
+    // },
+    // {
+    //   "titulo":"Folcklore Ergológico",
+    //   "subtitulo":"Aspectos Materiales",
+    //   "imagen":"../../../assets/img/b.jpg",
+    //   "pagina":"/ergologico",
+  
+    // },
+    // {
+    //   "titulo":"Folcklore Narrativo",
+    //   "subtitulo":"Mitos, Leyendas, y Cuentos",
+    //   "imagen":"../../../assets/img/c.jpg",
+    //   "pagina":"/narrativo",
+  
+    // },
+    // {
+    //   "titulo":"Folcklore Poético",
+    //   "subtitulo":"Vocablos Hecho Arte",
+    //   "imagen":"../../../assets/img/d.jpg",
+    //   "pagina":"/poetico",
+  
+    // },
+    // {
+    //   "titulo":"Folcklore Mágico",
+    //   "subtitulo":"Fe, Magia y Superstición",
+    //   "imagen":"../../../assets/img/3.png",
+    //   "pagina":"/magico",
+  
+    // }
   ]
   constructor() {}
 
