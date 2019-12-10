@@ -11,9 +11,11 @@ export class SocialPage implements OnInit {
   r3: boolean = false;
   r4: boolean = false;
   aux = 1;
+ 
   slideOpts = {
-    initialSlide: 1,
-    speed: 400
+    initialSlide: 0,
+    speed: 400,
+    autoplay:true
   };
   constructor() {}
 

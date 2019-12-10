@@ -7,34 +7,45 @@
   </ion-toolbar>
 </ion-header> 
 
-<ion-content class="fondo " fullscreen padding scroll-y="false">
-    <ion-slides>
+<ion-content class="fondo ion-padding" fullscreen scroll-y="false">
+    <ion-slides pager="true" [options]="slideOpts">
+     
       <ion-slide>
-        <ion-card class="fondoblanco">
-          <img src="../../../assets/img/cora8.png" />
-          <ion-card-header>
-            <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
-            <ion-card-title>Awesome Title</ion-card-title>
-          </ion-card-header>
-         <ion-card-content>
-            <p>
-                The <b>ionic conference app</b> is a practical preview of the ionic
-                framework in action, and a demonstration of proper code use.
-              </p>
-         </ion-card-content>
+          <ion-card >
+            <img height="100" width="100" src="../../../assets/img/magic1.jpg" />
+            <ion-card-content >
+            
+             <ion-card-title>
+               <h1><br>
+                Buena y Mala Suerte
+              </h1>
+             </ion-card-title>
+             <br>
+                
+             Se cree en la buena y  la mala suerte que brinda el agua en la cascada de Peguche, es por ello que cuando nos bañamos en la parte baja de la cascada todo lo malo se va con el agua. En cambio cuando nos bañamos en la cascada (dentro del velo) representa que nos cae todo lo bueno nuevas cosas”.
+              
+            </ion-card-content>
+          </ion-card>
+        </ion-slide> <ion-slide>
+        <ion-card >
+          <img  height="100" width="100" src="../../../assets/img/magic2.jpg" />
+          <ion-card-content >
           
+           <ion-card-title>
+             <h1><br>
+              El árbol del lechero 
+             </h1>
+           </ion-card-title>
+           <br>
+
+              Simboliza la vida y la muerte; es un árbol medicinal que sirve para aliviar afecciones del hígado, dolor de cabeza, eliminar verrugas y calmar el dolor de oído. En este lugar se da lugar diversas manifestaciones culturales de las comunidades aledañas, quienes van a pedir fuerza, fortaleza, suerte, abundancia, es normal encontrar al pie de este árbol centenario ofrendas que han realizado con frutas, granos, flores y comida. 
+            
+            
+          </ion-card-content>
         </ion-card>
       </ion-slide>
-  
-      <ion-slide>
-        <ion-card class="fondoblanco">
-          <img src="../../../assets/img/cora8.png" />
-          <h2>Welcome to the <b>ICA</b></h2>
-          <p>
-            The <b>ionic conference app</b> is a practical preview of the ionic
-            framework in action, and a demonstration of proper code use.
-          </p>
-        </ion-card>
-      </ion-slide>
+       
+     
     </ion-slides>
   </ion-content>
+  

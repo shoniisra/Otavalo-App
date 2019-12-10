@@ -7,7 +7,12 @@ import { AlertController } from "@ionic/angular";
   styleUrls: ["tab2.page.scss"]
 })
 export class Tab2Page {
+  slideOpts = {
+    initialSlide: 0,
+    speed: 400,
+    autoplay:true
+  }; 
   constructor(public alertController: AlertController) {}
-  
+ 
 
 }
