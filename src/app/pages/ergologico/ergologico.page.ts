@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { VideoPlayer } from '@ionic-native/video-player/ngx';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-ergologico',
@@ -12,9 +14,18 @@ export class ErgologicoPage implements OnInit {
     speed: 400,
     autoplay:true
   };
-  constructor() { }
+  constructor(private videoPlayer: VideoPlayer, public modalCtrl: ModalController) { }
 
   ngOnInit() {
+  }
+  onClick(){
+    // this.videoPlayer.play("src/assets/vid1.mp4");
+    // /home/shoniisra/Documentos/turismoApp/src/assets/vid1.mp4
+    this.videoPlayer.play('file:///android_asset/www/assets/vid1.mp4').then(() => {
+    console.log('video completed');
+    }).catch(err => {
+    console.log(err);
+    });
   }
 
 }

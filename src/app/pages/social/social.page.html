@@ -9,11 +9,14 @@
     scrollable
     (ionChange)="segmentChanged($event)"
     color="secondary"
-    value="1"
+    value="5"
   >
-    <ion-segment-button href="#r1" value="1">
-      <ion-label>KOYA RAYMI</ion-label>
+    <ion-segment-button href="#r5" value="5">
+      <ion-label>VIDEO</ion-label>
     </ion-segment-button>
+    <ion-segment-button href="#r1" value="1">
+        <ion-label>KOYA RAYMI</ion-label>
+      </ion-segment-button>
     <ion-segment-button href="#r2" value="2">
       <ion-label>CAPAC RAYMI</ion-label>
     </ion-segment-button>
@@ -25,6 +28,18 @@
     </ion-segment-button>
   </ion-segment>
 </ion-header>
+
+<ion-content color="dark"*ngIf="r5">
+    <ion-card (click)="onClick()"  color="dark" class="card-background-page">
+         
+        <img class="myvideo" src="../../../assets/img/imgvideo2.png" />
+        <img class="iconovideo" src="../../../assets/img/video.png" />
+       
+          <ion-card-content>
+            Otavalo, Arte Cultura y Tradición.
+          </ion-card-content>
+      </ion-card>
+  </ion-content>
 
 <ion-content class="fondo " *ngIf="r1">
   <ion-card class="fondoblanco ">
