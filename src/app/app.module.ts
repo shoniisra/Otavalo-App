@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 
 
 import { VideoPlayer } from '@ionic-native/video-player/ngx';
+import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +19,7 @@ import { VideoPlayer } from '@ionic-native/video-player/ngx';
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
     StatusBar,
-    SplashScreen, VideoPlayer,
+    SplashScreen, VideoPlayer,ScreenOrientation,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

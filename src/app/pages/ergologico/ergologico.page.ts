@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { VideoPlayer } from '@ionic-native/video-player/ngx';
 import { ModalController } from '@ionic/angular';
+import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 
 @Component({
   selector: 'app-ergologico',
@@ -14,17 +15,18 @@ export class ErgologicoPage implements OnInit {
     speed: 400,
     autoplay:true
   };
-  constructor(private videoPlayer: VideoPlayer, public modalCtrl: ModalController) { }
+  constructor(private videoPlayer: VideoPlayer, public modalCtrl: ModalController,private screenOrientation: ScreenOrientation) { }
 
   ngOnInit() {
   }
   onClick(){
     // this.videoPlayer.play("src/assets/vid1.mp4");
     // /home/shoniisra/Documentos/turismoApp/src/assets/vid1.mp4
+    this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);
     this.videoPlayer.play('file:///android_asset/www/assets/vid1.mp4').then(() => {
-    console.log('video completed');
+      this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT);
     }).catch(err => {
-    console.log(err);
+      this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT);
     });
   }
 
