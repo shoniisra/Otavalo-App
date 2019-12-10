@@ -6,7 +6,7 @@
     <ion-title color="primary">FOLKLORE NARRATIVO</ion-title>
   </ion-toolbar>
   <ion-toolbar mode="ios">      
-      <ion-title color="secondary">LEYENDAS</ion-title>
+      <ion-title color="secondary">CASOS Y LEYENDAS</ion-title>
     </ion-toolbar>
 </ion-header>
 
@@ -17,7 +17,8 @@
         <ion-card routerLink="{{ tarjeta.pagina }}" routerDirection="root" class="fondoblanco">
           <img src="{{ tarjeta.imagen }}"/>
           <ion-card-header>            
-            <ion-card-title>{{ tarjeta.titulo }}</ion-card-title>
+           
+            <ion-card-title> <small>{{ tarjeta.subtitulo }} : </small>  {{ tarjeta.titulo }}</ion-card-title>
           </ion-card-header>   
           <ion-card-content class="ion-text-justify">
               {{ tarjeta.historia | slice:0:100}}... 

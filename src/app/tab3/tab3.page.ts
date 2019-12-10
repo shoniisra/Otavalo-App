@@ -6,6 +6,11 @@ import { Component } from "@angular/core";
   styleUrls: ["tab3.page.scss"]
 })
 export class Tab3Page {
+  // <img class="imagen" src="../../../assets/img/ota1.jpg" />
+  // <img class="imagen" src="../../../assets/img/ota2.jpg" />
+  // <img class="imagen" src="../../../assets/img/ota3.jpg" />
+  // <img class="imagen" src="../../../assets/img/ota5.jpg" />
+  // <img class="imagen" src="../../../assets/img/ota4.jpg" />
   tarjetas: any = [
     {
       titulo: "FIESTAS DE CORAZA Y PENDONEROS",

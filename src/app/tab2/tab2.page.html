@@ -4,23 +4,70 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="fondo card-background-page">
- 
+<ion-content class="fondo">
+  <!-- texto -->
   <ion-card class="fondoblanco ">
-    <ion-card-header>     
+    <ion-card-header>
       <ion-card-subtitle>Folklore y Tradición</ion-card-subtitle>
       <ion-card-title>OTAVALO</ion-card-title>
     </ion-card-header>
     <ion-card-content class="ion-text-justify">
-      Otavalo es una ciudad localizada al norte del Ecuador, pertenece a la provincia de Imbabura, esta ciudad surge en un valle rodeado de montañas y lagunas, pobladas de leyendas indias; rodeada por volcanes como Cotacachi, Imbabura, Mojanda y refrescada por la legendaria Imbakucha o Laguna de San Pablo, una de las más grandes y hermosas del país y de la región Andina. Los kichwas Otavalo, etnia indígena a quien debe su nombre la ciudad y toda la región, es uno de los pueblos más reconocidos dentro de toda América debido a un proceso sociocultural propio que le ha permitido fortalecer sus costumbres y tradiciones donde su música y la habilidad artesanal principalmente, constituyen hoy su carta de presentación al mundo. [ CITATION Gra12 \l 2058 ]
-     
+      Otavalo es una ciudad localizada al norte del Ecuador, pertenece a la
+      provincia de Imbabura, esta ciudad surge en un valle rodeado de montañas y
+      lagunas, pobladas de leyendas indias; rodeada por volcanes como Cotacachi,
+      Imbabura, Mojanda y refrescada por la legendaria Imbakucha o Laguna de San
+      Pablo, una de las más grandes y hermosas del país y de la región Andina.
+      Los kichwas Otavalo, etnia indígena a quien debe su nombre la ciudad y
+      toda la región, es uno de los pueblos más reconocidos dentro de toda
+      América debido a un proceso sociocultural propio que le ha permitido
+      fortalecer sus costumbres y tradiciones donde su música y la habilidad
+      artesanal principalmente, constituyen hoy su carta de presentación al
+      mundo. [ CITATION Gra12 \l 2058 ]
     </ion-card-content>
   </ion-card>
-  <ion-card>
-    <img class="imagen" src="../../../assets/img/ota1.jpg" />
-    <img class="imagen" src="../../../assets/img/ota2.jpg" />
-    <img class="imagen" src="../../../assets/img/ota3.jpg" />
-    <img class="imagen" src="../../../assets/img/ota5.jpg" />
-    <img class="imagen" src="../../../assets/img/ota4.jpg" />
+
+  <!-- galería -->
+  <ion-card class="fondoblanco">
+    <ion-card-header>
+      <ion-card-title>Galería</ion-card-title>
+    </ion-card-header>
+
+    <ion-slides class="carrusel" pager="true" [options]="slideOpts">
+       <ion-slide>
+        <ion-img
+          width="150px"
+          height="150px"
+          src="../../../assets/img/ota1.jpg"
+        ></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img
+          width="150px"
+          height="150px"
+          src="../../../assets/img/ota5.jpg"
+        ></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img
+          width="150px"
+          height="150px"
+          src="../../../assets/img/ota3.jpg"
+        ></ion-img>
+      </ion-slide>
+     
+      <!-- <ion-slide>
+        <ion-img
+          width="150px"
+          height="150px"
+          src="../../../assets/img/ota4.jpg"
+        ></ion-img> </ion-slide
+      ><ion-slide>
+        <ion-img
+          width="150px"
+          height="150px"
+          src="../../../assets/img/ota2.jpg"
+        ></ion-img>
+      </ion-slide> -->
+    </ion-slides>
   </ion-card>
 </ion-content>

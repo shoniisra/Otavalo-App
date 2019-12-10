@@ -18,7 +18,7 @@
       width: 100%;
   }
   ion-slide > ion-card {
-    height: 150%;
+    height: 180%;
     margin: 2px 2px;
   }
   ion-slide{
@@ -28,4 +28,9 @@
   ion-slides{
     height: 90%;
     width: 100%;
+  }
+  ion-card{
+    height: 180%;
+    margin: 2px 2px;
+    position: relative;
   }

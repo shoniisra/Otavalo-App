@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ErgologicoPage implements OnInit {
 
+  slideOpts = {
+    initialSlide: 0,
+    speed: 400,
+    autoplay:true
+  };
   constructor() { }
 
   ngOnInit() {
