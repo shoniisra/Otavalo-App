@@ -20,6 +20,12 @@ export class Tab3Page {
 {imagen: "../../../assets/img/erg1.jpg"  },
 {imagen: "../../../assets/img/ley3.jpg"    },
 {imagen: "../../../assets/img/ota3.jpg"   },
+{imagen: "../../../assets/img/foto1.jpg"},
+{imagen: "../../../assets/img/foto2.jpg"},
+{imagen: "../../../assets/img/foto3.jpg"},
+{imagen: "../../../assets/img/foto4.jpg"},
+{imagen: "../../../assets/img/foto5.jpg"},
+{imagen: "../../../assets/img/foto6.jpg"},
 {imagen: "../../../assets/img/soc1.jpg"  },
 {imagen: "../../../assets/img/soc6.jpg"},
 {imagen: "../../../assets/img/caso2.jpg"  },
@@ -49,6 +55,8 @@ export class Tab3Page {
 {imagen: "../../../assets/img/soc11.jpg"  },
 {imagen: "../../../assets/img/soc5.jpg"  },
 {imagen: "../../../assets/img/yam1.png"}
+
+
 
     // {
     //   titulo: "FIESTAS DE CORAZA Y PENDONEROS",

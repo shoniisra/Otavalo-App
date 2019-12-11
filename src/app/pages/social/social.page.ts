@@ -44,7 +44,7 @@ export class SocialPage implements OnInit {
   }
   onClick(){
     // this.videoPlayer.play("src/assets/vid1.mp4");
-    // /home/shoniisra/Documentos/turismoApp/src/assets/vid1.mp4
+    // /home/shoniisra/Documentos/Otavalo Llacta/src/assets/vid1.mp4
     this.videoPlayer.play('file:///android_asset/www/assets/vid2.mp4').then(() => {
     console.log('video completed');
     }).catch(err => {

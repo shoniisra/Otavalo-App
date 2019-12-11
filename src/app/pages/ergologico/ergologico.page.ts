@@ -21,7 +21,7 @@ export class ErgologicoPage implements OnInit {
   }
   onClick(){
     // this.videoPlayer.play("src/assets/vid1.mp4");
-    // /home/shoniisra/Documentos/turismoApp/src/assets/vid1.mp4
+    // /home/shoniisra/Documentos/Otavalo Llacta/src/assets/vid1.mp4
     this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);
     this.videoPlayer.play('file:///android_asset/www/assets/vid1.mp4').then(() => {
       this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT);
