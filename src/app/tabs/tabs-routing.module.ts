@@ -45,8 +45,17 @@ const routes: Routes = [
     ]
   },
   {
+    path: 'home',
+  children: [
+    {
+      path: '',
+      loadChildren: () =>
+        import('../principal/principal.module').then(m => m.PrincipalPageModule)
+    }
+  ]},
+  {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/home',
     pathMatch: 'full'
   }
 ];

@@ -41,6 +41,10 @@ const routes: Routes = [
   {
     path: 'leyenda4',
     loadChildren: () => import('./pages/leyenda4/leyenda4.module').then( m => m.Leyenda4PageModule)
+  },
+  {
+    path: 'principal',
+    loadChildren: () => import('./principal/principal.module').then( m => m.PrincipalPageModule)
   }
 ];
 @NgModule({
